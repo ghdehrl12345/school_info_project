@@ -1,6 +1,6 @@
 import express from "express";
 import {    
-    maController, 
+    classController, 
     studentController   
 } from "../controllers/adminController";
 

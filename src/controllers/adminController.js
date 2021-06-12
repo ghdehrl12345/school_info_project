@@ -3,5 +3,5 @@ export const classController = (req,res) => {
 }
 
 export const studentController = (req,res) =>{
-    res.render("/admin/student");
+    res.render("admin/student");
 }

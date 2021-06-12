@@ -1,5 +1,5 @@
 export const mainController = (req,res) => {
-    res.render("/global/result");
+    res.render("global/main");
 };
 
 export const resultController = (req, res) => {
@@ -14,4 +14,4 @@ export const resultController = (req, res) => {
   
       res.render("global/result");
     }
-  };
+  }
