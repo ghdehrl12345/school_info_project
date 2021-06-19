@@ -1,13 +1,12 @@
 import mongoose from "mongoose";
 
-//table ,schema ,collection
 const Schema = mongoose.Schema;
 
 const Student = new Schema(
   {
     name: {
       type: String,
-      required: true,
+      reqired: true,
     },
 
     gender: {
@@ -15,9 +14,14 @@ const Student = new Schema(
       required: true,
     },
 
-    grade: {
+    school: {
       type: String,
       required: true,
+    },
+
+    grade: {
+      type: Number,
+      reqired: true,
     },
 
     ban: {
@@ -35,10 +39,10 @@ const Student = new Schema(
       required: true,
     },
   },
+
   {
     versionKey: false,
   }
 );
-//인스턴스화
 
 export default mongoose.model(`Student`, Student, `Student`);

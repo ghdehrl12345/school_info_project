@@ -9,5 +9,4 @@ const globalRouter = express.Router();
 globalRouter.get("/", mainController);
 globalRouter.get("/result", resultController);
 
-
 export default globalRouter;
